@@ -13,7 +13,7 @@ pygame.mixer.music.load("music.mp3")
 display_width = 800
 display_height = 600
 
-#              R    G    B
+#              R        G    B
 black     = (  0,   0,   0)
 white     = (255, 255, 255)
 red       = (255,   0,   0)

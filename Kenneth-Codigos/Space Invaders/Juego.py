@@ -17,7 +17,7 @@ ventana = pygame.display.set_mode((ancho,alto))
 #Este parametro se utiliza para mostar un mensaje en la ventana
 pygame.display.set_caption("Space Invaders 1.0")
 #Aca se define los valores de los objetos a utilizar con sus iconos.
-laser = pygame.image.load("imagenes/Laser.png")
+laser = pygame.image.load("imagenes/laser1.png")
 laser_y = 0
 nave_defensora = pygame.image.load("imagenes/navedefensora.png")
 ancho_nave= nave_defensora.get_width()
@@ -39,7 +39,6 @@ while True:
             sys.exit()
             
         elif evento.type == pygame.KEYDOWN:
-            ventana.fill((0,0,0))
             if evento.key == pygame.K_SPACE:
                 laser_y = nave_defensora_x
                 laser_x = nave_defensora_y +23
