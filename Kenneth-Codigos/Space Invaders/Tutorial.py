@@ -64,7 +64,7 @@ class Nave:#Se usan las clases para crear objetos.
     
 def main():
     pygame.init() #Acá se llaman todos los modulos de Pygame
-    pantalla #Se crea la pantalla
+    pantalla #Se crea la pantall
     
     nave_x = 50
     nave_y = 50
@@ -73,13 +73,14 @@ def main():
     laser1_y = 0
     laser2_y = 0
     vel = 50
+
     pygame.display.set_caption("Space Invaders 1.0") #Acá se define el titulo de la ventana
     salir = False
     reloj1 = pygame.time.Clock()#Se establece para posteriormente ayudar a controlar los FPS.
     reloj2 = pygame.time.Clock()
     while salir != True: #Loop Principal
         
-        if ult_nave < 700:
+        if nave  700:
             nave_x += vel
             ult_nave += vel
             first_nave += vel
@@ -164,5 +165,4 @@ def main():
 
 #Llamamos los medios que se definieron anterior mente.
 main()
-NaveDef = Nave()
-NaveDef
+movimiento()
